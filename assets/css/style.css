@@ -380,6 +380,7 @@ html *::-webkit-scrollbar-track {
     color: rgba(0, 0, 0, 0.6);
 }
 
+/* Js modal */
 .modal {
     position: fixed;
     top: 0;
