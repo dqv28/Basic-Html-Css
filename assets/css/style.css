@@ -178,6 +178,7 @@ html *::-webkit-scrollbar-track {
     line-height: 46px;
 }
 
+/* Fix not show image */
 #slider {
     position: relative;
     margin-top: 46px;
