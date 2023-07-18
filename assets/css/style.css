@@ -47,6 +47,8 @@ html *::-webkit-scrollbar-track {
     padding: 11px 16px;
     margin-top: 15px;
     opacity: 0.9;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -89,6 +91,10 @@ html *::-webkit-scrollbar-track {
 
 .mt-16 {
     margin-top: 16px !important;
+}
+
+.mt-32 {
+    margin-top: 32px !important;
 }
 
 #main {
@@ -162,9 +168,25 @@ html *::-webkit-scrollbar-track {
     font-size: 14px;
 }
 
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 21px;
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
 }
 
 #header .search-btn:hover {
@@ -172,6 +194,7 @@ html *::-webkit-scrollbar-track {
     cursor: pointer;
 }
 
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 20px;
@@ -202,6 +225,7 @@ html *::-webkit-scrollbar-track {
 #slider .text-description {
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 1px #000;
 }
 
 #content {
@@ -210,9 +234,12 @@ html *::-webkit-scrollbar-track {
 
 #content .section-content {
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading {
@@ -238,7 +265,7 @@ html *::-webkit-scrollbar-track {
 }
 
 #content .member-list {
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 #content .member-name {
@@ -289,7 +316,7 @@ html *::-webkit-scrollbar-track {
 }
 
 .place-list {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .place-img {
@@ -337,6 +364,15 @@ html *::-webkit-scrollbar-track {
     display: inline-block;
 }
 
+.contact-info a {
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
+}
+
 .contact-form {
     font-size: 15px;
 }
@@ -345,7 +381,6 @@ html *::-webkit-scrollbar-track {
     padding: 10px;
     border: 1px solid #ccc;
     width: 100%;
-    outline: none;
 }
 
 .map-section img {
@@ -489,3 +524,5 @@ html *::-webkit-scrollbar-track {
         transform: translateY(0);
     }
 }
+
+/* @media () */
