@@ -97,10 +97,6 @@ html *::-webkit-scrollbar-track {
     margin-top: 32px !important;
 }
 
-#main {
-
-}
-
 #header {
     position: fixed;
     top: 0;
@@ -226,10 +222,6 @@ html *::-webkit-scrollbar-track {
     font-size: 15px;
     margin-top: 25px;
     text-shadow: 0 0 1px #000;
-}
-
-#content {
-
 }
 
 #content .section-content {
